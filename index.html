@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>저기 어때</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+    <!-- 네비게이션 -->
+    <nav id="nav">
+      <div class="nav__list">
+        <h1 class="nav__logo">저기어때.</h1>
+        <div class="nav__search"> 
+        <form action="https://www.goodchoice.kr/product/result" method="GET" class="nav__form-search"> 
+          <input  class="nav__form-input" autocomplete="off" type="text" name="keyword"/>
+          <button type="button" class="nav__form-btn"><i class="fas fa-search"></i></button>
+          <span class="nav__form-close">X</span>
+        </form>
+      </div>
+      <ul class="nav__menu">
+        <li class="nav__menu-items">내주변</li>
+        <li class="nav__menu-items">예약내역</li>
+        <ul class="nav__menu-items">
+            더보기
+          <ul class="nav__side">
+            <li class="nav__side-list">공지사항</li>
+            <li class="nav__side-list">고객센터</li>
+            <li class="nav__side-list">Q&A</li>
+          </ul>
+        </ul>
+        <li class="nav__menu-items">로그인</li>
+      </ul>
+    </nav>
+
+    <section id="main">
+      <!-- 메인 이미지 -->
+      <div class="main__img-box">
+        <img class="main__img" src="./images/mainimg.jpg" alt="메인이미지" />
+      </div>
+
+      <!-- 메인 링크 -->
+      <div class="main__link">
+        <ul class="main__link-list">
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-hotel"></i></div>
+            <p class="main__link-desc">모텔</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-building"></i></div>
+            <p class="main__link-desc">호텔</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-city"></i></div>
+            <p class="main__link-desc">펜션</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-hotel"></i></div>
+            <p class="main__link-desc">리조트</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-house-user"></i></div>
+            <p class="main__link-desc">게스트하우스</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-campground"></i></div>
+            <p class="main__link-desc">캠핑, 글램</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-tree"></i></div>
+            <p class="main__link-desc">한옥</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-hiking"></i></div>
+            <p class="main__link-desc">내주변</p>
+          </li>
+          <li class="main__link-items">
+            <div class="main__link-img"><i class="fas fa-money-bill"></i>
+            </div>
+            <p class="main__link-desc">페이백</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 저기어때 소식 -->
+      <article id="article-news">
+        <h2>저기어때 소식</h2>
+
+        <div class="wrap__news">
+          <!-- 1 -->
+          <div class="news__card">
+            <div class="news__card-imgbox">
+              <div>저기어때</div>
+            </div>
+              <div class="news__card-block">
+                <div class="news__card-title">저기어때 비즈니스</div>
+                <div class="news__card-desc">출장부터 복지까지<br />저기어때 비즈니스로 스마트하게</div>
+              </div>
+          </div>
+          <!-- 2 -->
+          <div class="news__card">
+            <div class="news__card-imgbox red">
+              <div>잘</div>
+            </div>
+              <div class="news__card-block">
+                <div class="news__card-title">저기어때 서체 출시</div>
+                <div class="news__card-desc">
+                  젊고 당당한 저기어때 잘난체<br />지금 다운로드 받으세요!
+                </div>
+              </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 앱 다운로드 -->
+      <div id="app">
+        <div class="app__title">앱 다운 받고 <span class="app__span">더 많은 혜택 </span>받으세요</div>
+        <div class="app__click">
+          <button class="app__click-btn" type="button">
+            <small>GET IT ON</small>
+            <div class="app__download">Google Play</div>
+          </button>
+
+          <button class="app__click-btn" type="button">
+            <small>GET IT ON</small>
+            <div class="app__download">Google Play</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- 이벤트 -->
+      <article id="article-event">
+        <h2>이벤트</h2>
+        <div class="event__form">
+          <div class="event__slider">
+            <img data-slide="slide1" class="event__slider-slide showing" src="/images/slide1.jpg" alt="이벤트이미지1" />
+            <img data-slide="slide2" class="event__slider-slide " src="/images/slide2.jpg" alt="이벤트이미지2" />
+            <img data-slide="slide3" class="event__slider-slide" src="/images/slide3.jpg" alt="이벤트이미지3" />
+          <img data-slide="slide4" class="event__slider-slide" src="/images/slide4.jpg" alt="이벤트이미지4" />
+          <img data-slide="slide5" class="event__slider-slide" src="/images/slide5.jpg" alt="이벤트이미지5" />
+        </div>
+        <div  class="slider-btn">
+          <div data-dot="slide1" class="slider-dot active"></div>
+          <div data-dot="slide2" class="slider-dot"></div>
+          <div data-dot="slide3" class="slider-dot"></div>
+          <div data-dot="slide4" class="slider-dot"></div>
+          <div data-dot="slide5" class="slider-dot"></div>
+        </div>
+      </div>
+        
+        <!-- 광고 신청 및 숙소 등록 -->
+      <div id="advertising">
+        <div class="adver__img-box">
+          <img class="adver__img" src="images/adver.jpg" alt="광고등록" />
+          <div class="adver__hover">
+            <div class="adver__hover-desc">광고 등록</div>
+          </div>
+        </div>
+        <div class="adver__img-box">
+          <img class="adver__img" src="images/hotel.jpg" alt="숙소등록" />
+          <div class="adver__hover">
+            <div class="adver__hover-desc">숙소 등록</div>
+          </div>
+        </div>
+      </div>
+    </article>
+    </section>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+      <div class="wrap__footer">
+        <ul class="footer__info">
+        <li class="footer__info-list">회사소개</li>
+        <li class="footer__info-list">이용약관</li>
+        <li class="footer__info-list">개인정보처리방침</li>
+        <li class="footer__info-list">사업자 정보확인</li>
+        <li class="footer__info-list">여기어때 마케팅센터</li>
+        <li class="footer__info-list">액티비티 호스트센터</li>
+        <li class="footer__info-list">HOTEL 여기어때</li>
+        <li class="footer__info-list">콘텐츠산업진흥법에의한 표시</li>
+      </ul>
+
+      <p>고객행복센터 1670-0000 오전 9시 - 새벽 3시</p>
+
+      <address id="address">
+        <p>(주) 저기어때 컴퍼니</p>
+        <div>주소: 서울특별시 강남구 어디로</div>
+      </address>
+
+      <div class="footer__icon">
+        <div class="facebook">페이스북</div>
+        <div class="blog">블로그</div>
+      </div>
+
+    </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
