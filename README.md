@@ -1,4 +1,4 @@
-# To Do App
+# 저기 어때
 
 [구경하기](https://chkim116.github.io/jeogi/)
 
